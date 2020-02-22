@@ -1,0 +1,21 @@
+.event{
+    padding-top: 183px;
+    display: block;
+    font-size: 36px;
+    color: #5e5e73;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 470px;
+}
+#button{
+    background-color: #000000;
+    border-color: #000000;
+    border-bottom-color: #dc3545;
+    border-bottom-width: initial;
+}
+#button:hover{
+    background-color: #ea4140;
+    border-color: #ea4140;
+    border-bottom-color: #f8d61b;
+    border-bottom-width: initial;
+}
