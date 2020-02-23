@@ -17,7 +17,7 @@ Route::get('ministries', 'PagesController@getMinistries');
 Route::get('sermons', 'PagesController@getSermons');
 Route::get('sermon_single', 'PagesController@getSermon_single');
 Route::post('contact', 'ContactController@store')->name('contact');
-Route::resource('event', 'EventController');
+Route::resource('events', 'EventController');
 
 Auth::routes();
 

@@ -43,20 +43,21 @@ class EventController extends Controller
             'venue' => 'required',
             'date' => 'required',
             'description' => 'required',
-            'image' => 'required|image|max:2048|mimes:jpeg,jpg,bmp,png,gif,svg'
+            'image' => 'required|image|max:2048|mimes:jpeg,jpg,png,gif,svg'
         ]);
         $image = $request->file('image');
 
-        $new_name = rand() . '.' . $image->
-        getClientOriginalExtension();
+        $new_name = rand() . '.' . $image->getClientOriginalExtension();
         $image->move(public_path('images'), $new_name);
         $form_data = array(
             'title' => $request->title,
             'venue' => $request->venue,
             'date' => $request->date,
             'description' => $request->description,
-            'image' => $request->$new_name
+            'image' => $new_name,
         );
+
+        // dd($form_data);
         Event::create($form_data);
         return redirect()->route('events.index')
             ->with('success', 'Events created succesfully.');
