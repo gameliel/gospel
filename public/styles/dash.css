@@ -1,0 +1,18 @@
+.card-body{
+  background: #c5707f14;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 993px)
+.w3-sidebar.w3-collapse {
+    display: block!important;
+}
+.w3-sidebar{
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+}
