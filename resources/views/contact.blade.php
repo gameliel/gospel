@@ -55,41 +55,25 @@
 			<div class="row contact_info_row row-eq-height">
 
 				<!-- Contact Info Content -->
-				<div class="col-lg-6 d-flex flex-column align-items-start justify-content-end">
+				<!-- <div class="col-lg-6 d-flex flex-column align-items-start justify-content-end"> -->
 					<div class="row">
-						<div class="col-lg-6 contact_info_col">
-							<div class="contact_info_title">Los Angeles Church</div>
+						<div class="col-lg-4 contact_info_col">
 							<ul class="contact_info_list">
-								<li><span>Address: </span>1481 Creekside Lane Avila Beach, CA 93424</li>
+								<li><span>Address: </span>Ebenezer Plaza NTA road Mbguoba. Opposite NTA complex Port Harcourt Rivers State. Nigeria.</li>
 								<li class="footer_contact_phone">
 									<span>Phone: </span>
 									<div>
-										<div> +53 345 7953 32453</div>
-										<div> +53 345 7557 822112</div>
+										<div> +234 809 806 5420</div>
+										<div> +234 803 375 6888</div>
 									</div>
 								</li>
-								<li><span>Email: </span>yourmail@gmail.com</li>
+								<li><span>Email: </span>info@gospelwealthembassy.com</li>
+								<li><span>Email: </span>contact@gospelwealthembassy.com</li>
 							</ul>
 						</div>
-						<div class="col-lg-6 contact_info_col">
-							<div class="contact_info_title">San Francisco Church</div>
-							<ul class="contact_info_list">
-								<li><span>Address: </span>1481 Creekside Lane Avila Beach, CA 93424</li>
-								<li class="footer_contact_phone">
-									<span>Phone: </span>
-									<div>
-										<div> +53 345 7953 32453</div>
-										<div> +53 345 7557 822112</div>
-									</div>
-								</li>
-								<li><span>Email: </span>yourmail@gmail.com</li>
-							</ul>
-						</div>
-					</div>
-				</div>
 
 				<!-- Contact Info Image -->
-				<div class="col-lg-6">
+				<div class="col-lg-8">
 					<div class="contact_info_image"><img src="images/contact_image.jpg" alt=""></div>
 				</div>
 			</div>

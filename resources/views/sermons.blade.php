@@ -59,15 +59,8 @@
 						<div class="sermon_text">
 							<p>Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Fusce venenatis diam urna, eu pharetra arcu varius ac. Etiam cursus turpis lectus, id iaculis risus tempor id. Phasellus fringilla nisl sed sem scelerisque, eget aliquam magna vehicula.nteger nec bibendum lacus.</p>
 						</div>
-						<div class="sermon_buttons">
-							<ul>
-								<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
-								<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
-								<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
-								<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
-								<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
-								<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
-							</ul>
+						<div class="true_img">
+              <img src="{{ asset('images/image_3.jpg')}}" style="padding-top: 16px;" alt="">
 						</div>
 					</div>
 				</div>
