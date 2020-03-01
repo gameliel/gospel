@@ -66,7 +66,7 @@
 				<div class="col-lg-6">
 					<div class="intro_text">
 						<p>Gospel Wealth embassy Our Vision is to reach out to the dying world with the manifestation of God's power and put laughter on the faces of the billions of people on the earth that we can reach through the preaching of the gospel.  To wipe tears from faces and give a facelift to our generation. 
-To draw multitudes to the knowledge of God and the kingdom of God by the preaching of the word of God and humanitarian services would wide. </p>
+						To draw multitudes to the knowledge of God and the kingdom of God by the preaching of the word of God and humanitarian services would wide. </p>
 						<div class="button intro_button"><a href="#">Read More</a></div>
 					</div>
 				</div>
@@ -172,7 +172,7 @@ Gospel Wealth Embassy is not just a church,  it is a mandate commissioned by Go
 
 				<!-- Sermon Image -->
 				<div class="col-lg-6">
-					<div class="sermon_image"><img src="images/sermon_image.jpg" alt=""></div>
+					<div class="sermon_image"><img src="images/banner-1.jpg" alt=""></div>
 				</div>
 
 				<!-- Sermon Content -->

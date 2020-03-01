@@ -6,6 +6,11 @@
    <div class="card-header">
      <h3>Event List out</h3>
    </div>
+   @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
    <div class="card-body">
      <table class="table table-bordered table-striped">
        <tr>
@@ -15,7 +20,7 @@
          <th width="20%">Date</th>
          <th width="40%">Description</th>
        </tr>
-       @foreach($data as $row)
+       @foreach($event as $row)
        <tr>
          <td><img src="{{ URL::to('/') }}/images/{{ $row->image }}" class="img-thumbnail" width="75"</td>
          <td>{{ $row->title}}</td>
@@ -24,6 +29,13 @@
          <td>{{ $row->description }}</td>
          <td>
 
+         <form action="{{ route('products.destroy',$events->id) }}" method="POST">
+            <a class="btn btn-info" href="{{ route('events.show',$product->id) }}">Show</a>
+            <a class="btn btn-primary" href="{{ route('events.edit',$product->id) }}">Edit</a>
+            @csrf
+            @method('DELETE')
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
          </td>
        </tr>
        @endforeach
