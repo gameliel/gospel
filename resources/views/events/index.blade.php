@@ -20,18 +20,17 @@
          <th width="20%">Date</th>
          <th width="40%">Description</th>
        </tr>
-       @foreach($event as $row)
+       @foreach($events as $event)
        <tr>
-         <td><img src="{{ URL::to('/') }}/images/{{ $row->image }}" class="img-thumbnail" width="75"</td>
-         <td>{{ $row->title}}</td>
-         <td>{{ $row->venue}}</td>
-         <td>{{ $row->date }}</td>
-         <td>{{ $row->description }}</td>
+         <td><img src="{{ URL::to('/') }}/images/{{ $event->image }}" class="img-thumbnail" width="75"/></td>
+         <td>{{ $event->title}}</td>
+         <td>{{ $event->venue}}</td>
+         <td>{{ $event->date }}</td>
+         <td>{{ $event->description }}</td>
          <td>
-
-         <form action="{{ route('products.destroy',$events->id) }}" method="POST">
-            <a class="btn btn-info" href="{{ route('events.show',$product->id) }}">Show</a>
-            <a class="btn btn-primary" href="{{ route('events.edit',$product->id) }}">Edit</a>
+         <a class="btn btn-info" href="{{ route('events.show',$event->id) }}">Show</a>
+         <a class="btn btn-primary" href="{{ route('events.edit',$event->id) }}">Edit</a>
+         <form action="{{ route('events.destroy',$event->id) }}" method="POST">
             @csrf
             @method('DELETE')
           <button type="submit" class="btn btn-danger">Delete</button>

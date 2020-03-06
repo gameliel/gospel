@@ -14,7 +14,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $event = Event::latest()->paginate(6);
+        $events = Event::latest()->paginate(6);
         return view('events.index', compact('events'))
             ->with('i', (request()->input('page', 1 ) -1) * 5);
     }
@@ -57,7 +57,7 @@ class EventController extends Controller
             'image' => $new_name,
         );
         Event::create($form_data,  $request->all());
-        return view('events.index', ['data'=>$data])
+        return redirect()->route('events.index')
             ->with('success', 'Events created succesfully.');
 
     }
